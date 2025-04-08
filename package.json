@@ -1,0 +1,42 @@
+{
+    "name": "@decodelabs/vite-plugin-castaway",
+    "version": "0.1.0",
+    "description": "Vite plugin for DecodeLabs Castaway integration",
+    "keywords": [
+        "vite-plugin"
+    ],
+    "homepage": "https://github.com/decodelabs/vite-plugin-castaway#readme",
+    "bugs": {
+        "url": "https://github.com/decodelabs/vite-plugin-castaway/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/decodelabs/vite-plugin-castaway.git"
+    },
+    "license": "MIT",
+    "author": "Tom Wright",
+    "type": "module",
+    "scripts": {
+        "build": "unbuild",
+        "prepack": "unbuild"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "main": "./dist/index.cjs",
+    "module": "dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "peerDependencies": {
+        "vite": "^6"
+    },
+    "devDependencies": {
+        "@types/node": "^22.14.0",
+        "unbuild": "^3.5.0"
+    }
+}
